@@ -1,0 +1,49 @@
+.plus {
+    padding-top: 94px;
+    padding-bottom: 47px;
+    background-color: var(--secondary-color);
+}
+
+.plus-menu {
+    display: flex;
+}
+
+.plus-menu__list {
+    width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.plus-menu__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--our-team-color);
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.plus-menu__icon {
+    height: 70px;
+    width: 70px;
+}
+
+.plus-menu__title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.plus-menu__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--p-text-color);
+}

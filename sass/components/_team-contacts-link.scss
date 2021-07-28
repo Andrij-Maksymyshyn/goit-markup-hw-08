@@ -1,0 +1,21 @@
+.team-contacts-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+
+    transition: background-color var(--duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+
+    &:hover .icon-main-color,
+    &:focus .icon-main-color {
+        fill: var(--secondary-color);
+    }
+}
