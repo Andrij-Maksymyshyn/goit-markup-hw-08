@@ -1,19 +1,7 @@
 .plus {
-    padding-top: 94px;
-    padding-bottom: 47px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     background-color: var(--secondary-color);
-}
-
-.plus-menu {
-    display: flex;
-}
-
-.plus-menu__list {
-    width: 270px;
-
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
 }
 
 .plus-menu__box {
@@ -21,8 +9,11 @@
     align-items: center;
     justify-content: center;
     background-color: var(--our-team-color);
-    width: 270px;
     height: 120px;
+    margin-bottom: 30px;
+}
+
+.plus-menu__list:not(:last-child) {
     margin-bottom: 30px;
 }
 
@@ -38,6 +29,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .plus-menu__text {
@@ -46,4 +38,45 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--p-text-color);
+}
+
+@media screen and (min-width: 768px) {
+    .plus-menu {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -30px;
+        margin-right: -30px;
+    }
+
+    .plus-menu__list {
+        width: 354px;
+
+        &:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0;
+        }
+    }
+
+    .plus-menu__title {
+        text-align: unset;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .plus {
+        padding-top: 94px;
+        padding-bottom: 47px;
+    }
+
+    .plus-menu__list {
+        width: 270px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+    }
 }

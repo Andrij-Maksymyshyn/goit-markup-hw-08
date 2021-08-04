@@ -79,8 +79,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--p-text-color);
     margin-top: 10px;
@@ -108,6 +108,13 @@
         background-origin: padding-box;
         border: none;
         outline: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal-form-checkbox-label {
+        font-size: 14px;
+        line-height: 1.71;
     }
 }
 
