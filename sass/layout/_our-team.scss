@@ -28,7 +28,7 @@
 }
 
 .team-description {
-    padding: 30px 122px 24px;
+    padding: 30px 32px 24px;
 }
 
 .third-title {
@@ -46,12 +46,16 @@
 
 .team-contacts {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .team-contacts-list {
     width: 44px;
     height: 44px;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
 }
 
 @media screen and (min-width: 768px) {

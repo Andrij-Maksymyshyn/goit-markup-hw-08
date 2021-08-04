@@ -1,19 +1,24 @@
 .main-portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .button-class {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     font-family: inherit;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .list-button {
+    margin-bottom: 15px;
+
     &:not(:last-child) {
         margin-right: 8px;
+    }
+
+    &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
     }
 }
 
@@ -47,82 +52,106 @@
     background-color: var(--accent-color);
 }
 
-.network {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
+@media screen and (min-width: 768px) {
+    .button-class {
+        flex-wrap: unset;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
 
-.network-link {
-    display: block;
-    transition: box-shadow var(--duration) var(--timing-function);
-
-    &:hover,
-    &:focus {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-            0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    .list-button {
+        margin-bottom: unset;
     }
 }
 
-.network-union {
-    padding: 20px 24px;
-}
-
-.network-item {
-    flex-basis: calc((100% - 60px) / 3);
-    border: 1px solid var(--network-border-color);
-    display: block;
-    margin-bottom: 30px;
-
-    &:not(:nth-child(3n)) {
-        margin-right: 30px;
+@media screen and (min-width: 1200px) {
+    .main-portfolio {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 
-    &:nth-last-child(-n + 3) {
-        margin-bottom: 0;
+    .button-class {
+        margin-bottom: 50px;
     }
 }
 
-.portfolio-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--main-color);
-    margin-bottom: 4px;
-}
+// .network {
+//     display: flex;
+//     align-items: center;
+//     flex-wrap: wrap;
+// }
 
-.portfolio-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: var(--p-text-color);
-}
+// .network-link {
+//     display: block;
+//     transition: box-shadow var(--duration) var(--timing-function);
 
-.network-overlay {
-    position: relative;
-    overflow: hidden;
-}
+//     &:hover,
+//     &:focus {
+//         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+//             0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+//     }
+// }
 
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    padding: 63px 24px;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: var(--secondary-color);
-    background-color: var(--bagcolor-overlay);
+// .network-union {
+//     padding: 20px 24px;
+// }
 
-    transform: translateY(101%);
-    transition: transform var(--duration) var(--timing-function);
+// .network-item {
+//     flex-basis: calc((100% - 60px) / 3);
+//     border: 1px solid var(--network-border-color);
+//     display: block;
+//     margin-bottom: 30px;
 
-    .network-link:hover &,
-    .network-link:focus & {
-        transform: translateY(0%);
-    }
-}
+//     &:not(:nth-child(3n)) {
+//         margin-right: 30px;
+//     }
+
+//     &:nth-last-child(-n + 3) {
+//         margin-bottom: 0;
+//     }
+// }
+
+// .portfolio-title {
+//     font-weight: 700;
+//     font-size: 18px;
+//     line-height: 2;
+//     letter-spacing: 0.06em;
+//     color: var(--main-color);
+//     margin-bottom: 4px;
+// }
+
+// .portfolio-text {
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 1.88;
+//     letter-spacing: 0.03em;
+//     color: var(--p-text-color);
+// }
+
+// .network-overlay {
+//     position: relative;
+//     overflow: hidden;
+// }
+
+// .overlay {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     padding: 63px 24px;
+//     font-size: 18px;
+//     line-height: 1.56;
+//     letter-spacing: 0.03em;
+//     color: var(--secondary-color);
+//     background-color: var(--bagcolor-overlay);
+
+//     transform: translateY(101%);
+//     transition: transform var(--duration) var(--timing-function);
+
+//     .network-link:hover &,
+//     .network-link:focus & {
+//         transform: translateY(0%);
+//     }
+// }
