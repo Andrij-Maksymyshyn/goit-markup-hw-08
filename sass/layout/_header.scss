@@ -273,6 +273,10 @@
   .pasivecolor {
     color: var(--p-text-color);
   }
+
+  .burger-btn {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
