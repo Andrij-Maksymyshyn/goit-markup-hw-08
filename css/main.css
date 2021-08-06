@@ -219,6 +219,12 @@ body {
 .burger-btn-icon {
   width: 40px;
   height: 40px;
+  transition: fill var(--duration) var(--timing-function);
+}
+
+.burger-btn:hover .burger-btn-icon,
+.burger-btn:focus .burger-btn-icon {
+  fill: #2196f3;
 }
 
 .mobile-menu {
@@ -254,6 +260,12 @@ body {
 .close-icon {
   width: 40px;
   height: 40px;
+  transition: fill var(--duration) var(--timing-function);
+}
+
+.header-close-btn:hover .close-icon,
+.header-close-btn:focus .close-icon {
+  fill: #2196f3;
 }
 
 .mobile-menu-container {

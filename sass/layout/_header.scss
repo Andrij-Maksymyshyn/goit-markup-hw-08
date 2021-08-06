@@ -27,6 +27,13 @@
 .burger-btn-icon {
   width: 40px;
   height: 40px;
+
+  transition: fill var(--duration) var(--timing-function);
+
+  .burger-btn:hover &,
+  .burger-btn:focus & {
+    fill: rgba(33, 150, 243, 1);
+  }
 }
 
 .mobile-menu {
@@ -64,6 +71,13 @@
 .close-icon {
   width: 40px;
   height: 40px;
+
+  transition: fill var(--duration) var(--timing-function);
+
+  .header-close-btn:hover &,
+  .header-close-btn:focus & {
+    fill: rgba(33, 150, 243, 1);
+  }
 }
 
 .mobile-menu-container {
