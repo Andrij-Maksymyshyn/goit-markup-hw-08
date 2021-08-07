@@ -4,7 +4,7 @@
   --main-color: #212121;
   --secondary-color: #ffffff;
   --accent-color: #2196f3;
-  --p-text-color: #757575;
+  --p-text-color: rgba(117, 117, 117, 1);
   --footer-color: #2f303a;
   --our-team-color: #f5f4fa;
   --footer-link-color: rgba(255, 255, 255, 0.6);
@@ -158,6 +158,12 @@ body {
   padding: 40px;
 }
 
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 96%;
+  }
+}
+
 .close-btn {
   position: absolute;
   top: 8px;
@@ -290,13 +296,13 @@ body {
 
 .nav-list-link {
   font-size: 40px;
+  font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--main-color);
-  transition: color var(--duration) var(--timing-function);
 }
 
-.nav-list-link:hover, .nav-list-link:focus {
+.curcolor {
   color: #2196f3;
 }
 
@@ -310,19 +316,19 @@ body {
 
 .contacts-link {
   font-size: 24px;
+  font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var --p-text-color;
-  transition: color var(--duration) var(--timing-function), font-size var(--duration) var(--timing-function);
 }
 
-.contacts-link:hover, .contacts-link:focus {
-  color: #2196f3;
+.cur-font-size {
   font-size: 34px;
 }
 
 .mobile-social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .social-item:not(:last-child)::after {
@@ -337,6 +343,7 @@ body {
 
 .social-link {
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
@@ -528,13 +535,13 @@ body {
   background-color: var(--hover-button-backcolor);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet-hero.jpg");
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet-hero@2x.jpg");
   }
@@ -1204,11 +1211,11 @@ body {
   .two-footer-blocks {
     display: flex;
     align-items: baseline;
+    justify-content: space-around;
   }
   .our-networks {
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: auto;
   }
   .sign-for-mailing {
     margin-top: 60px;
@@ -1228,6 +1235,9 @@ body {
   }
   .our-networks {
     margin-left: 70px;
+  }
+  .join-title {
+    text-align: left;
   }
   .sign-for-mailing {
     text-align: unset;
@@ -1371,6 +1381,12 @@ body {
   border-radius: 2px;
   cursor: pointer;
   margin-right: 7px;
+}
+
+@media screen and (max-width: 400px) {
+  .modal-form-checkbox-label {
+    display: unset;
+  }
 }
 
 .modal-form-checkbox:focus + .modal-form-checkbox-label::before {
