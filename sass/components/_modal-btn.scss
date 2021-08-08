@@ -8,12 +8,6 @@
   padding: 40px;
 }
 
-@media screen and (max-width: 480px) {
-  .modal {
-    width: 96%;
-  }
-}
-
 .close-btn {
   position: absolute;
   top: 8px;
@@ -38,6 +32,22 @@
 
 .modal-icon {
   fill: var(--main-color);
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 96%;
+  }
+
+  .close-btn {
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  .close-btn {
+    top: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
