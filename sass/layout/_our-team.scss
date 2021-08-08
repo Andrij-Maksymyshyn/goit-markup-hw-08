@@ -1,116 +1,116 @@
 .our-team {
-    padding-top: 30px;
-    padding-bottom: 60px;
-    background-color: var(--our-team-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--our-team-color);
 }
 
 .second-title-work {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 .team-item {
-    background-color: var(--secondary-color);
-    text-align: center;
-    max-width: 450px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    margin-bottom: 30px;
+  background-color: var(--secondary-color);
+  text-align: center;
+  max-width: 450px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .team-description {
-    padding: 30px 32px 24px;
+  padding: 30px 32px 24px;
 }
 
 .third-title {
-    @extend %united;
-    font-weight: 500;
-    margin-bottom: 10px;
+  @extend %united;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .third-text {
-    @extend %united;
-    font-weight: 400;
-    color: var(--p-text-color);
-    margin-bottom: 16px;
+  @extend %united;
+  font-weight: 400;
+  color: var(--p-text-color);
+  margin-bottom: 16px;
 }
 
 .team-contacts {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .team-contacts-list {
-    width: 44px;
-    height: 44px;
+  width: 44px;
+  height: 44px;
 
-    &:not(:last-child) {
-        margin-right: 10px;
-    }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .team-list {
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: -30px;
-        margin-bottom: -30px;
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+
+  .team-item {
+    background-color: var(--secondary-color);
+    text-align: center;
+    width: 354px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
     }
 
-    .team-item {
-        background-color: var(--secondary-color);
-        text-align: center;
-        width: 354px;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
-
-        &:not(:nth-child(2n)) {
-            margin-right: 30px;
-        }
-
-        &:nth-last-child(-n + 2) {
-            margin-bottom: 0;
-        }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
     }
+  }
 
-    .team-description {
-        padding: 30px 74px 24px;
-    }
+  .team-description {
+    padding: 30px 74px 24px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .our-team {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
+  .our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
-    .second-title-work {
-        font-size: 36px;
-        line-height: 1.17;
-        margin-bottom: 50px;
-    }
+  .second-title-work {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 
-    .team-item {
-        margin-bottom: unset;
-        margin-right: 30px;
-        width: 270px;
+  .team-item {
+    margin-bottom: unset;
+    margin-right: 30px;
+    width: 270px;
 
-        &:last-child {
-            margin-right: 0;
-        }
+    &:last-child {
+      margin-right: 0;
     }
+  }
 
-    .team-description {
-        padding: 30px 32px;
-    }
+  .team-description {
+    padding: 30px 32px;
+  }
 }

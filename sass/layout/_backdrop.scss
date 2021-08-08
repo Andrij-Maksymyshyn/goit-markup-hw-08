@@ -1,27 +1,27 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--bagcolor-backdrop);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bagcolor-backdrop);
 
-    transition: opacity var(--duration) var(--timing-function),
-        visibility var(--duration) var(--timing-function);
+  transition: opacity var(--duration) var(--timing-function),
+    visibility var(--duration) var(--timing-function);
 }
 
 .is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal-streamer {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
-    margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-bottom: 12px;
 }
