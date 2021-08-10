@@ -152,7 +152,6 @@ body {
   left: 50%;
   top: 50%;
   width: 450px;
-  height: 100vh;
   background-color: var(--secondary-color);
   transform: translate(-50%, -50%);
   padding: 40px;
@@ -188,11 +187,8 @@ body {
   .modal {
     width: 96%;
   }
-}
-
-@media screen and (min-width: 768px) {
-  .modal {
-    height: unset;
+  .close-btn {
+    top: 40px;
   }
 }
 
